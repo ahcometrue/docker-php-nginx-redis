@@ -7,4 +7,4 @@ build:
   tags:
     - nnyc
   script:
-    - docker build -t php-nginx-redis .
+    - docker build -t ahcometrue/php-nginx-redis .
