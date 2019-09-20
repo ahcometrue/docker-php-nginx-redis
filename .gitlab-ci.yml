@@ -1,0 +1,10 @@
+stages:
+  - build
+
+build:
+  stage: build
+  when: manual
+  tags:
+    - nnyc
+  script:
+    - docker build -t php-redis .
