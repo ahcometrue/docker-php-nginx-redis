@@ -3,7 +3,6 @@ stages:
 
 build:
   stage: build
-  when: manual
   tags:
     - nnyc
   script:
