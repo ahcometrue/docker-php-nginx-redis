@@ -7,3 +7,5 @@ build:
     - nnyc
   script:
     - docker build -t ahcometrue/php-nginx-redis .
+    - docker push ahcometrue/php-nginx-redis:latest
+    - docker rmi ahcometrue/php-nginx-redis:latest
