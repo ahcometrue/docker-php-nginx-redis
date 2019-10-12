@@ -40,4 +40,7 @@ RUN apk --no-cache add \
   php7-pecl-apcu \
   php7-opcache \
   php7-soap \
-  php7-zip
+  php7-zip \
+  tzdata  && \
+  ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+  echo "Asia/Shanghai" > /etc/timezone
